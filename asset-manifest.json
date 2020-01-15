@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/faceapi-app/static/css/main.f031b8b7.chunk.css",
-    "main.js": "/faceapi-app/static/js/main.6114145b.chunk.js",
-    "main.js.map": "/faceapi-app/static/js/main.6114145b.chunk.js.map",
+    "main.js": "/faceapi-app/static/js/main.1a58c112.chunk.js",
+    "main.js.map": "/faceapi-app/static/js/main.1a58c112.chunk.js.map",
     "runtime-main.js": "/faceapi-app/static/js/runtime-main.78dcd928.js",
     "runtime-main.js.map": "/faceapi-app/static/js/runtime-main.78dcd928.js.map",
     "static/js/2.1e48cbf0.chunk.js": "/faceapi-app/static/js/2.1e48cbf0.chunk.js",
     "static/js/2.1e48cbf0.chunk.js.map": "/faceapi-app/static/js/2.1e48cbf0.chunk.js.map",
     "index.html": "/faceapi-app/index.html",
-    "precache-manifest.df35d237a70c60a74b608ad460351d2c.js": "/faceapi-app/precache-manifest.df35d237a70c60a74b608ad460351d2c.js",
+    "precache-manifest.0cb78552b6a9af2444d7fe55cf3be13e.js": "/faceapi-app/precache-manifest.0cb78552b6a9af2444d7fe55cf3be13e.js",
     "service-worker.js": "/faceapi-app/service-worker.js",
     "static/css/main.f031b8b7.chunk.css.map": "/faceapi-app/static/css/main.f031b8b7.chunk.css.map",
     "static/js/2.1e48cbf0.chunk.js.LICENSE": "/faceapi-app/static/js/2.1e48cbf0.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.78dcd928.js",
     "static/js/2.1e48cbf0.chunk.js",
     "static/css/main.f031b8b7.chunk.css",
-    "static/js/main.6114145b.chunk.js"
+    "static/js/main.1a58c112.chunk.js"
   ]
 }

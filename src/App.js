@@ -7,7 +7,6 @@ import './App.css';
 import SetupFaceId from './pages/setupFaceId/setupFaceId';
 // import Error from './components/error/error';
 
-
 const App = () => {
   return (
     <div className="App">

@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/faceapi-app/static/css/main.f031b8b7.chunk.css",
-    "main.js": "/faceapi-app/static/js/main.f9f8baf1.chunk.js",
-    "main.js.map": "/faceapi-app/static/js/main.f9f8baf1.chunk.js.map",
+    "main.js": "/faceapi-app/static/js/main.6114145b.chunk.js",
+    "main.js.map": "/faceapi-app/static/js/main.6114145b.chunk.js.map",
     "runtime-main.js": "/faceapi-app/static/js/runtime-main.78dcd928.js",
     "runtime-main.js.map": "/faceapi-app/static/js/runtime-main.78dcd928.js.map",
-    "static/js/2.f7ef5cb1.chunk.js": "/faceapi-app/static/js/2.f7ef5cb1.chunk.js",
-    "static/js/2.f7ef5cb1.chunk.js.map": "/faceapi-app/static/js/2.f7ef5cb1.chunk.js.map",
+    "static/js/2.1e48cbf0.chunk.js": "/faceapi-app/static/js/2.1e48cbf0.chunk.js",
+    "static/js/2.1e48cbf0.chunk.js.map": "/faceapi-app/static/js/2.1e48cbf0.chunk.js.map",
     "index.html": "/faceapi-app/index.html",
-    "precache-manifest.65b3a972f25c18a398e75dc6730a5647.js": "/faceapi-app/precache-manifest.65b3a972f25c18a398e75dc6730a5647.js",
+    "precache-manifest.df35d237a70c60a74b608ad460351d2c.js": "/faceapi-app/precache-manifest.df35d237a70c60a74b608ad460351d2c.js",
     "service-worker.js": "/faceapi-app/service-worker.js",
     "static/css/main.f031b8b7.chunk.css.map": "/faceapi-app/static/css/main.f031b8b7.chunk.css.map",
-    "static/js/2.f7ef5cb1.chunk.js.LICENSE": "/faceapi-app/static/js/2.f7ef5cb1.chunk.js.LICENSE"
+    "static/js/2.1e48cbf0.chunk.js.LICENSE": "/faceapi-app/static/js/2.1e48cbf0.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.78dcd928.js",
-    "static/js/2.f7ef5cb1.chunk.js",
+    "static/js/2.1e48cbf0.chunk.js",
     "static/css/main.f031b8b7.chunk.css",
-    "static/js/main.f9f8baf1.chunk.js"
+    "static/js/main.6114145b.chunk.js"
   ]
 }

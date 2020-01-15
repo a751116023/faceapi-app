@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-faceapi-app/static/css/main.af1bc6e4.chunk.css",
+    "main.js": "/react-faceapi-app/static/js/main.fc8a785f.chunk.js",
+    "main.js.map": "/react-faceapi-app/static/js/main.fc8a785f.chunk.js.map",
+    "runtime-main.js": "/react-faceapi-app/static/js/runtime-main.73bdd629.js",
+    "runtime-main.js.map": "/react-faceapi-app/static/js/runtime-main.73bdd629.js.map",
+    "static/js/2.acac4895.chunk.js": "/react-faceapi-app/static/js/2.acac4895.chunk.js",
+    "static/js/2.acac4895.chunk.js.map": "/react-faceapi-app/static/js/2.acac4895.chunk.js.map",
+    "index.html": "/react-faceapi-app/index.html",
+    "precache-manifest.0ee89646780ee17c8801b2b8b903ffbe.js": "/react-faceapi-app/precache-manifest.0ee89646780ee17c8801b2b8b903ffbe.js",
+    "service-worker.js": "/react-faceapi-app/service-worker.js",
+    "static/css/main.af1bc6e4.chunk.css.map": "/react-faceapi-app/static/css/main.af1bc6e4.chunk.css.map",
+    "static/js/2.acac4895.chunk.js.LICENSE": "/react-faceapi-app/static/js/2.acac4895.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.73bdd629.js",
+    "static/js/2.acac4895.chunk.js",
+    "static/css/main.af1bc6e4.chunk.css",
+    "static/js/main.fc8a785f.chunk.js"
+  ]
+}

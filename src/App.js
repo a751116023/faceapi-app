@@ -9,7 +9,6 @@ import SetupFaceId from './pages/setupFaceId/setupFaceId';
 
 
 const App = () => {
-  console.log ( 'PUBLIC_URL', process.env.PUBLIC_URL );
   return (
     <div className="App">
       <Router history={createHistory({ basename: process.env.PUBLIC_URL })}>

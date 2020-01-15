@@ -2,7 +2,7 @@
   "name": "faceapi-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://zhifez.github.io/react-faceapi-app",
+  "homepage": "http://zhifez.github.io/faceapi-app",
   "dependencies": {
     "@reach/router": "^1.2.1",
     "@tensorflow-models/coco-ssd": "^2.0.1",

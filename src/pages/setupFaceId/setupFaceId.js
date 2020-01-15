@@ -151,6 +151,9 @@ class SetupFaceId extends React.Component {
               <i className="fas fa-plus mr-2"></i>
               <span>New FaceID</span>
             </button>
+            <p className="text-info mt-2">
+              Note: This site does not collect your information. All FaceID data are recorded and store locally on your device.
+            </p>
           </div>
           <div className="col-md-8 col-lg-8">
             <div className="d-flex align-items-center mb-3">

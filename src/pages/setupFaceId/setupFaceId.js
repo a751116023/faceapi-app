@@ -72,8 +72,17 @@ class SetupFaceId extends React.Component {
       faceIds,
       activeFaceId,
       setActiveFaceId,
+      createFaceId,
       updateFaceId
     } = this.props;
+
+    let activeFaceData = null;
+    if ( activeFaceId && faceIds ) {
+      faceIds.forEach ( data => {
+        if ( data.id === activeFaceId ) 
+          activeFaceData = data;
+      } );
+    }
 
     let matcherProfile = null;
     if ( faceIds !== null ) {
@@ -94,24 +103,24 @@ class SetupFaceId extends React.Component {
 
     return ( 
       <div className={classes.wrapper}>
-        <button 
+        {/* <button 
           className={classnames ( 
             classes.btn_back,
             'btn btn-sm btn-link p-0 mb-2'
           )}
           onClick={() => {
             setActiveFaceId ( null );
-            navigate ( '/' );
+            navigate ( '/home' );
           }}
         >
-          <i className="fas fa-arrow-left mr-2"></i>
-          <span>Back</span>
-        </button>
-        <h3>Face ID Setup</h3>
+          <i className="fas fa-home mr-2"></i>
+          <span>Home</span>
+        </button> */}
+        <h3>Face Recognition</h3>
         <hr />
         <div className="row text-left">
-          <div className="col-md-3 col-lg-3">
-            <h5>Select a Face ID:</h5>
+          <div className="col-md-2 col-lg-2">
+            <h5 className="mb-2">Select a Face ID:</h5>
             {faceIds && faceIds.map ( ( { 
               id, 
               name,
@@ -135,9 +144,29 @@ class SetupFaceId extends React.Component {
                 </div>
               );
             } )}
+            <button 
+              className="btn btn-outline-dark"
+              onClick={() => createFaceId ()}
+            >
+              <i className="fas fa-plus mr-2"></i>
+              <span>New FaceID</span>
+            </button>
           </div>
-          <div className="col-md-9 col-lg-9">
+          <div className="col-md-8 col-lg-8">
             <div className="d-flex align-items-center mb-3">
+              {activeFaceData &&
+              <input 
+                type="text"
+                className="form-element mr-2"
+                placeholder="FaceID User's Name"
+                value={activeFaceData.name}
+                onChange={( e ) => {
+                  updateFaceId ( activeFaceId, {
+                    name: e.target.value
+                  } )
+                }}
+              />}
+
               <button 
                 className="btn btn-sm btn-primary mr-2"
                 onClick={() => this._updateFaceId ()}
@@ -183,7 +212,19 @@ class SetupFaceId extends React.Component {
                 }
               }}
               isRecording={isRecording}
+              width={window.innerWidth * 7.8/12}
+              height={window.innerHeight * 0.8}
             />
+          </div>
+          <div className="col-md-2 col-lg-2">
+            <div className={classes.instruct}>
+              <h5>Instruction:</h5>
+              <p>1. Click "+ New FaceID" on the left panel to create a new FaceID.</p>
+              <p>2. Click on any of the FaceID on the list to edit it.</p>
+              <p>3. The "Add Descriptors" and "Record" button should be enabled when a FaceID is selected.</p>
+              <p>4. Click on "Add Descriptors" to store a copy of the descriptors data that is generated when a face is detected (green box).</p>
+              <p>5. Click on "Record" to start the FaceID anew, move your head around all directions slowly. All the descriptors data will be collected every second, and will be stored in your browser's local storage on "Record" button is toggle off.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -202,6 +243,7 @@ const mapDispatchToProps = dispatch => {
   return {
     getFaceIds: () => dispatch ( faceIdFunctions.getFaceIds () ),
     setActiveFaceId: ( id ) => dispatch ( faceIdFunctions.setActiveFaceId ( id ) ),
+    createFaceId: () => dispatch ( faceIdFunctions.createFaceId () ),
     updateFaceId: ( id, data ) => dispatch ( faceIdFunctions.updateFaceId ( id, data ) )
   }
 }

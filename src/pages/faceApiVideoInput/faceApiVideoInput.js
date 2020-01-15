@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Webcam from 'react-webcam';
 import { loadModels, getFullFaceDescription, createMatcher } from '../../face';
 
-const WIDTH = window.innerWidth * 8/12;
-const HEIGHT = window.innerHeight * 0.75;
 const inputSize = 160;
 
 class FaceApiVideoInput extends Component {
@@ -107,6 +105,8 @@ class FaceApiVideoInput extends Component {
 
   render() {
     const {
+      width = window.innerWidth,
+      height = window.innerHeight,
       activeProfileLabel = null
     } = this.props;
 
@@ -115,8 +115,8 @@ class FaceApiVideoInput extends Component {
     // let camera = '';
     if (facingMode) {
       videoConstraints = {
-        width: WIDTH,
-        height: HEIGHT,
+        width: width,
+        height: height,
         facingMode: facingMode
       };
       // if (facingMode === 'user') {
@@ -193,17 +193,17 @@ class FaceApiVideoInput extends Component {
         {/* <p>Camera: {camera}</p> */}
         <div
           style={{
-            width: WIDTH,
-            height: HEIGHT
+            width: width,
+            height: height
           }}
         >
-          <div style={{ position: 'relative', width: WIDTH }}>
+          <div style={{ position: 'relative', width: width }}>
             {videoConstraints ? (
               <div style={{ position: 'absolute' }}>
                 <Webcam
                   audio={false}
-                  width={WIDTH}
-                  height={HEIGHT}
+                  width={width}
+                  height={height}
                   ref={this.webcam}
                   screenshotFormat="image/jpeg"
                   videoConstraints={videoConstraints}

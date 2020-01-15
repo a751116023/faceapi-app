@@ -15,6 +15,13 @@ export const setActiveFaceId = ( id ) => {
   }
 }
 
+export const createFaceId = () => {
+  return async dispatch => {
+    faceIdCtrl.createFaceId ();
+    dispatch ( getFaceIds () );
+  }
+}
+
 export const updateFaceId = ( id, data ) => {
   return async dispatch => {
     faceIdCtrl.updateFaceId ( id, data );

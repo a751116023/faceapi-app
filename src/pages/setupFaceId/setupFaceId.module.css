@@ -1,14 +1,6 @@
 .wrapper {
-  position: relative;
   padding: 1rem;
   text-align: center;
-}
-
-.btn_back {
-  position: absolute;
-  left: 1rem;
-  top: 1rem;
-  font-size: 1rem;
 }
 
 .card_faceId {
@@ -35,4 +27,15 @@
 .card_faceId_active:hover {
   border-color: lightgrey;
   color: white;
+}
+
+.instruct {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 0.3rem;
+}
+
+.instruct p {
+  margin-top: 0.3rem;
 }

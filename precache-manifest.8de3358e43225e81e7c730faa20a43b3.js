@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b7e9475cc980f83e3b2f3d9813ba140a",
+    "revision": "9b15958c4b11602fcefd961e0294bbb1",
     "url": "/faceapi-app/index.html"
   },
   {
-    "revision": "2fe8c45cc64c27935f79",
+    "revision": "86741b957725f155dfad",
     "url": "/faceapi-app/static/css/main.f031b8b7.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/faceapi-app/static/js/2.681942a3.chunk.js.LICENSE"
   },
   {
-    "revision": "2fe8c45cc64c27935f79",
-    "url": "/faceapi-app/static/js/main.0e3caed3.chunk.js"
+    "revision": "86741b957725f155dfad",
+    "url": "/faceapi-app/static/js/main.ed2e0a34.chunk.js"
   },
   {
     "revision": "c0717f3190bc869555bb",
